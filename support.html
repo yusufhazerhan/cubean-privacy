@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cubean — Support</title>
+<style>
+  :root{
+    --bg-top:#FAF4EA; --bg-bottom:#FDEDE3;
+    --card:#ffffff; --ink:#3B3654; --muted:#8B87A0;
+    --coral:#FF8A5C; --coral-light:#FF9A70; --success:#5BC98C;
+    --border:#EFE7DA; --divider:#F3ECDF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:ui-rounded,"SF Pro Rounded",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    color:var(--ink);
+    background:linear-gradient(180deg,var(--bg-top),var(--bg-bottom));
+    min-height:100vh;
+    line-height:1.6;
+    padding:32px 20px 64px;
+    display:flex;justify-content:center;
+  }
+  .wrap{width:100%;max-width:680px}
+  .badge{display:flex;align-items:center;gap:12px;margin-bottom:24px}
+  .logo{
+    width:52px;height:52px;border-radius:16px;flex:none;
+    background:linear-gradient(145deg,var(--coral-light),var(--coral));
+    box-shadow:0 8px 18px rgba(255,138,92,.32);
+    display:grid;place-items:center;
+  }
+  .logo span{color:#fff;font-weight:800;font-size:26px}
+  .badge h1{font-size:26px;font-weight:800;letter-spacing:-.3px}
+  .badge p{font-size:13px;color:var(--muted);font-weight:600}
+  .card{
+    background:var(--card);border-radius:24px;padding:28px 26px;
+    box-shadow:0 10px 30px rgba(59,54,84,.08);
+    border:1px solid var(--border);
+  }
+  .lead{font-size:15px;color:var(--muted);font-weight:500;margin-bottom:8px}
+  h2{font-size:16px;font-weight:800;margin:26px 0 10px;display:flex;align-items:center;gap:8px}
+  h2::before{content:"";width:8px;height:8px;border-radius:3px;background:var(--coral)}
+  h2.ok::before{background:var(--success)}
+  p.a{font-size:14.5px;margin-bottom:10px}
+  ul{list-style:none;margin-top:6px}
+  li{position:relative;padding-left:20px;margin-bottom:10px;font-size:14.5px}
+  li::before{content:"";position:absolute;left:2px;top:10px;width:6px;height:6px;border-radius:50%;background:var(--muted);opacity:.5}
+  b{font-weight:800}
+  a{color:var(--coral);font-weight:700;text-decoration:none;word-break:break-word}
+  a:hover{text-decoration:underline}
+  .hr{height:1px;background:var(--divider);margin:24px 0}
+  .contact{background:#FBF6EE;border-radius:16px;padding:16px 18px;font-size:14.5px}
+  footer{text-align:center;color:var(--muted);font-size:12px;font-weight:600;margin-top:22px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="badge">
+      <div class="logo"><span>C</span></div>
+      <div>
+        <h1>Cubean</h1>
+        <p>Support</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="lead">Something not working, or just want to tell us what you think? Email us — a real person reads every message and usually answers within a couple of days.</p>
+
+      <div class="contact" style="margin-top:16px">
+        <b>Email:</b> <a href="mailto:yusufhazerhan@gmail.com">yusufhazerhan@gmail.com</a><br>
+        Please include your device model and iOS version — it makes problems much faster to track down.
+      </div>
+
+      <h2>Common questions</h2>
+
+      <p class="a"><b>I bought coins and they didn't arrive.</b><br>
+      Open <b>Shop</b> and tap <b>Restore Purchases</b> at the bottom, or the same button in <b>Settings</b>. If they still don't appear, email us with the date of the purchase and we'll sort it out.</p>
+
+      <p class="a"><b>I changed phones — where did my progress go?</b><br>
+      Progress syncs through your own iCloud account. Sign in to the same Apple Account on the new device, make sure iCloud Drive is on, and open Cubean. If the old progress doesn't appear, email us before playing much further.</p>
+
+      <p class="a"><b>Are there ads?</b><br>
+      No. Cubean has no advertising of any kind, and no timers or lives waiting to run out.</p>
+
+      <p class="a"><b>How do I get more coins without paying?</b><br>
+      By playing. Finishing levels, three-star wins, daily streaks, reward chests every ten levels, weekly league placings and live events all pay coins. The Piggy Bank also saves a quarter of everything you earn.</p>
+
+      <p class="a"><b>I'm stuck on a level.</b><br>
+      Every level is winnable. Rotate the cube before you twist — matches connect around the edges and corners, so the line you need is often half-hidden on another face. Boosters from the shop can help on a level that's fighting you.</p>
+
+      <p class="a"><b>The colors are hard to tell apart.</b><br>
+      Turn on <b>Colorblind Mode</b> in Settings — it adds a distinct shape to every color.</p>
+
+      <p class="a"><b>How do I turn off reminders?</b><br>
+      Settings › Reminders. You can also turn them off for good in the iOS Settings app under Notifications.</p>
+
+      <div class="hr"></div>
+
+      <h2 class="ok">Privacy</h2>
+      <p class="a">Cubean collects no personal data and contains no analytics or advertising software. Full policy: <a href="https://yusufhazerhan.github.io/cubean-privacy/">Privacy Policy</a>.</p>
+    </div>
+
+    <footer>© 2026 Yusuf Hazerhan Çömez · Cubean</footer>
+  </div>
+</body>
+</html>
